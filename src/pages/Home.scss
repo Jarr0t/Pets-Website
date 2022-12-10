@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+  height: 100vh;
+
+  .dog {
+    width: 29vw;
+    height: 50vh;
+  }
+
+  .container__hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    border: 0.5em solid #eafffb;
+    background-color: #fbfffe;
+    font-family: 'League Spartan', sans-serif;
+    color: #484646;
+
+
+    .container__hero img {
+      display: flex;
+    }
+
+    .container__hero__text {
+      word-wrap: break-word;
+      margin-left: 9vw;
+      margin-right: 2vw;
+    }
+
+    .container__hero__text__info {
+      margin-top: 5vh;
+      font-size: 1.5em;
+
+    }
+
+    .container__hero__text__header {
+      font-size: 3em;
+    }
+
+    .container__hero__down {
+      img {
+        position: absolute;
+        top: 70%;
+        left: 2%;
+      }
+
+      button {
+        border: none;
+        color: #5F5B5B;
+        width: 150px;
+        height: 40px;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 14px;
+        border-radius: 10px;
+        cursor: pointer;
+        position: absolute;
+        top: 80%;
+        left: 45%;
+        background-color: #F7D8FA;
+      }
+    }
+  }
+
+  .container__info {
+    width: 100%;
+    height: 50vh;
+  }
+
+}
