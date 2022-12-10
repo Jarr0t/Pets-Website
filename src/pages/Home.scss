@@ -82,6 +82,11 @@
   .container__info {
     width: 100%;
 
+    .container__info__wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
     .container__info__header {
       font-family: 'League Spartan', sans-serif;
       font-size: 2em;
@@ -91,6 +96,7 @@
       margin-top: 5vh;
       font-weight: normal;
       margin-bottom: 10vh;
+      margin-right: 30px;
     }
 
     .container__info__cards {

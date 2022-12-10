@@ -5,6 +5,7 @@ import Card from "../components/Home/Card.js";
 import blocksheet from "../resources/images/home/blocksheet.svg";
 import planet from "../resources/images/home/planet.svg";
 import plusbutton from "../resources/images/home/plusbutton.svg";
+import dog from "../resources/images/home/dog.svg";
 import "./Home.scss";
 
 const Home = () => {
@@ -22,16 +23,17 @@ const Home = () => {
         </div>
         <img className='dog' src={dogwithgirl} alt="" />
         <div className='container__hero__down'>
-
           <img src={humanwithdog} alt="" />
-
         </div>
       </div>
-
       <div className='container__info'>
-        <p className='container__info__header'>
-          Поиск хозяина пропавшего животного за три шага!
-        </p>
+        <div className='container__info__wrapper'>
+          <p className='container__info__header'>
+            Поиск хозяина пропавшего животного за три шага!
+          </p>
+          <img src={dog} alt="" />
+        </div>
+
         <div className='container__info__cards'>
           <Card
             text="ok"
