@@ -5,7 +5,7 @@ import MissingAnimal from "./pages/MissingAnimal.js";
 import VeterinaryClinics from "./pages/VeterinaryClinics.js";
 import CarePets from './pages/CarePets.js';
 import Navbar from './components/Navbar/Navbar.js';
-
+import Footer from "./components/Footer/Footer.js";
 
 const App = () => {
   return (
@@ -17,6 +17,7 @@ const App = () => {
         <Route path='/carepets' element={<CarePets/>}/>
         <Route path='/*' element={<Home />} />
       </Routes>
+      <Footer/>
     </div>
   )
 }
