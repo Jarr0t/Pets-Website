@@ -43,15 +43,21 @@ const Navbar = () => {
           <ul className={menuIsOpen ? "navbar__menu__dropdown--active" : "navbar__menu__dropdown--disabled"} >
             <p onClick={() => {
               setMenuIsOpen(!menuIsOpen);
-            }}>Кот</p>
+            }}><Link to="/carecats">Кошка</Link></p>
             <p onClick={() => {
               setMenuIsOpen(!menuIsOpen);
-            }}>Собака</p>
+            }}><Link to="/caredogs">Собака</Link></p>
           </ul>
         </div>
-        <li>Первая помощь</li>
-        <li>Приюты</li>
-        <img className="navbar__menu__icon" src={human} alt="" draggable="false" />
+        <li>
+          <Link to="/firsthelp">Первая помощь</Link>
+        </li>
+        <li>
+          <Link to="/shelters">Приюты</Link>
+        </li>
+        <Link to="/profile">
+          <img className="navbar__menu__icon" src={human} alt="" draggable="false" />
+        </Link>
         <img className="navbar__menu__icon" src={search} alt="" draggable="false" />
       </ul>
     </div>

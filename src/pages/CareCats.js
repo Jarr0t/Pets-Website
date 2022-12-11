@@ -1,14 +1,14 @@
 import React from 'react';
+import "./CareCats.scss";
 import loading from "../resources/images/loading.gif";
-import "./VeterinaryClinics.scss";
 
-const VeterinaryClinics = () => {
+const CareCats = () => {
   return (
-    <div className='veterinary'>
+    <div className='carecats'>
       <p>Упс.. Страница находится в разработке.</p>
       <img src={loading} alt="" />
     </div>
   )
 }
 
-export default VeterinaryClinics;
+export default CareCats;
