@@ -1,13 +1,37 @@
-@media (max-width: 991px) {
-  .navbar__menu {
-    margin-left: 20px;
+@media (max-width: 581px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .navbar__menu {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+      font-size: 0.7em;
+
+      .navbar__menu__dropdown--active {
+        width: 20vw;
+      }
+
+      .navbar__menu__dropdown--disabled {
+        width: 20vw;
+      }
+
+      .navbar__menu__icon {
+        cursor: pointer;
+        margin-left: 1vw;
+        margin-right: 1vw;
+      }
+    }
+
+
   }
 }
 
 .navbar {
   width: 100%;
   display: flex;
-
 
   a {
     text-decoration: none;
