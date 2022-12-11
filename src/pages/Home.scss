@@ -2,6 +2,11 @@
   width: 100%;
   margin-bottom: 10vh;
 
+  a {
+    text-decoration: none;
+    color: #484646;
+  }
+
   .dog {
     width: 50%;
     height: 50%;
@@ -36,8 +41,10 @@
     }
 
     .container__hero__button:hover {
+      a {
+        color: white;
+      }
       background-color: #ffacd7;
-      color: white;
       transition: all 300ms ease-in-out;
     }
 

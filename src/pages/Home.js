@@ -6,6 +6,7 @@ import blocksheet from "../resources/images/home/blocksheet.svg";
 import planet from "../resources/images/home/planet.svg";
 import plusbutton from "../resources/images/home/plusbutton.svg";
 import dog from "../resources/images/home/dog.svg";
+import { Link } from "react-router-dom";
 import "./Home.scss";
 
 const Home = () => {
@@ -18,7 +19,10 @@ const Home = () => {
             Ha платформе есть специальный раздел, где ты сможешь найти породу своего питомца, и
             уже сейчас подобрать для него правильный уход!</p>
           <button className='container__hero__button'>
-            Узнать
+            <Link to="/carecats">
+              Узнать
+            </Link>
+
           </button>
         </div>
         <img className='dog' src={dogwithgirl} alt="" />
