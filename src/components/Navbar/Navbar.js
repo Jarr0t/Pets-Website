@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import logo from "../../resources/images/logo.svg";
 import human from "../../resources/images/human.svg";
 import search from "../../resources/images/search.svg";
@@ -24,10 +25,16 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <img src={logo} alt="logo" draggable="false" />
+      <Link to="/">
+        <img src={logo} alt="logo" draggable="false" />
+      </Link>
       <ul className='navbar__menu' ref={menuRef}>
-        <li>Пропало животное</li>
-        <li>Вет. клиники</li>
+        <li>
+          <Link to="/missingpets">Пропало животное</Link>
+        </li>
+        <li>
+          <Link to="/veterinaryclinics">Вет. клиники</Link>
+        </li>
 
         <li onClick={() => setMenuIsOpen(!menuIsOpen)}>Уход</li>
         <img onClick={() => setMenuIsOpen(!menuIsOpen)} className={menuIsOpen ? 'navbar__menu__check--active' : 'navbar__menu__check--disabled'} src={smallCheck} alt="" draggable="false" />
