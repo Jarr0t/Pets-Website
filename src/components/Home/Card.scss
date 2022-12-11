@@ -1,10 +1,12 @@
 .card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center; 
   margin-right: 10vw;
   margin-left: 10vw;
   width: 20vw;
-  height: 35vh;
   background: #EFFFFC;
   border-radius: 10px;
   border: 0.5px solid #40ECD7;
@@ -28,8 +30,9 @@
   }
 
   .card__image {
-    margin-top: 15%;
-    padding-left: 34%;
+    margin-top: 2vh;
+    width: 45%;
+    height: 45%;
   }
 
   .card__container {
@@ -50,5 +53,6 @@
 
   .card__container__info {
     font-size: 0.8em;
+    margin-bottom: 5vh;
   }
 }
