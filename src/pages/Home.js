@@ -17,7 +17,7 @@ const Home = () => {
           <p className='container__hero__text__info'>
             Ha платформе есть специальный раздел, где ты сможешь найти породу своего питомца, и
             уже сейчас подобрать для него правильный уход!</p>
-          <button>
+          <button className='container__hero__button'>
             Узнать
           </button>
         </div>
