@@ -1,3 +1,9 @@
+@media (max-width: 991px) {
+  .dog {
+    opacity: 0;
+  }
+}
+
 .container {
   width: 100%;
   margin-bottom: 10vh;
@@ -44,6 +50,7 @@
       a {
         color: white;
       }
+
       background-color: #ffacd7;
       transition: all 300ms ease-in-out;
     }
@@ -71,7 +78,7 @@
     .container__hero__down {
       img {
         position: absolute;
-        top: 70%;
+        top: 79%;
         left: 1%;
       }
     }
@@ -93,15 +100,21 @@
       display: flex;
       margin-top: 5vh;
       font-weight: normal;
-      margin-bottom: 8vh;
       margin-right: 30px;
+    }
+
+    @media (max-width: 530px) {
+      .container__info__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
     }
 
     .container__info__cards {
       display: flex;
       justify-content: space-between;
-      
-      
     }
   }
 

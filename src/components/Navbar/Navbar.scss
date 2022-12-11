@@ -1,6 +1,13 @@
+@media (max-width: 991px) {
+  .navbar__menu {
+    margin-left: 20px;
+  }
+}
+
 .navbar {
   width: 100%;
   display: flex;
+
 
   a {
     text-decoration: none;
